@@ -3,17 +3,14 @@
     <head>
         <title>Warble</title>
         <link href="https://fonts.googleapis.com/css?family=Megrim|Raleway" rel="stylesheet">
-        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
         <link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="styles/normalize.css">
         <link rel="stylesheet" type="text/css" href="styles/login.css">
         <link rel="stylesheet" type="text/css" href="styles/main.css">
-        
-        <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     </head>
     
     <body>
-        <a onclick="myFunction()" class="ion-android-menu"></a>
+        <a onclick="dropdown()" class="ion-android-menu"></a>
         <div class="dropdown">
              
             <div id="myDropdown" class="dropdown-content">
@@ -23,24 +20,21 @@
             </div>
         </div>
         
-        <div class="login-content">
-            <input id="email" type="email" placeholder="Email">
-            <input id="pw" type="password" placeholder="Password">
-            
-            <button id='loginbtn' class="btn btn-action">
-                Log In
-            </button>
-            <button id="signupbtn" class="btn btn-secondary">
-                Sign Up
-            </button>
-            <button id="logoutbtn" class="btn btn-action hide">
-                Log Out
-            </button>
-            
-                   
-            
-        </div>
+        <button onclick="signIn()" class="signin-btn">Log In</button>
         
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/3.3.0/firebase-auth.js"></script>
+        <script>
+        // Initialize Firebase
+            var config = {
+                apiKey: "AIzaSyDysWbftabMN8Zml354RC_SRbNtNwaEZ1U",
+                authDomain: "warble-ef406.firebaseapp.com",
+                databaseURL: "https://warble-ef406.firebaseio.com",
+                storageBucket: "warble-ef406.appspot.com",
+                };
+            firebase.initializeApp(config);
+        </script>   
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
         <script src="scripts/login.js"></script>
         <script src="scripts/landing.js"></script>
     </body>
