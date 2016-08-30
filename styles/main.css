@@ -5,12 +5,9 @@ html {
 
 body {
     min-height: 100%;
-}
-
-.hero-content {
+    background-image: url(../assets/images/background.JPG);
     position: relative;
     min-height: 600px;
-    background-image: url(../assets/images/background.JPG);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,7 +26,7 @@ body {
 }
 .hero-content .hero-button {
     position:absolute;
-    top: 325px;
+    top: 400px;
     left: 530px;
     font-family: 'Raleway', serif;
     font-size: 2rem;

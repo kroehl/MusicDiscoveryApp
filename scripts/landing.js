@@ -16,3 +16,7 @@ window.onclick = function(event) {
     }
   }
 }
+
+function loadApp () {
+    window.location.href = "app.html";
+}
