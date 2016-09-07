@@ -1,0 +1,38 @@
+html {
+    height: 100%;
+    font-size: 100%;
+}
+
+body {
+    min-height: 100%;
+    background-image: url(../assets/images/background.JPG);
+    position: relative;
+    min-height: 600px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero-content .hero-title {
+    position: absolute;                   
+    width: 100%; 
+    font-family: 'Megrim', cursive;
+    font-size: 13rem;
+    color:#FFFF7E;
+    opacity: .7;
+    text-align: center;
+    text-shadow: 1px 1px 0px #D3D3D3;
+    letter-spacing: 20px;
+}
+.hero-content .hero-button {
+    position:absolute;
+    top: 400px;
+    left: 530px;
+    font-family: 'Raleway', serif;
+    font-size: 2rem;
+    border-style: double;
+    border-width: thick;
+    color:#FFFF7E;
+    opacity: .7;
+    text-align: center;
+}

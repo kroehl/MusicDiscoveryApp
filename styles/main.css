@@ -1,62 +1,21 @@
-html {
-    height: 100%;
-    font-size: 100%;
-}
-
-body {
-    min-height: 100%;
-    background-image: url(../assets/images/background.JPG);
-    position: relative;
-    min-height: 600px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
-}
-
-.hero-content .hero-title {
-    position: absolute;                   
-    width: 100%; 
-    font-family: 'Megrim', cursive;
-    font-size: 13rem;
-    color:#FFFF7E;
-    opacity: .7;
-    text-align: center;
-    text-shadow: 1px 1px 0px #D3D3D3;
-    letter-spacing: 20px;
-}
-.hero-content .hero-button {
-    position:absolute;
-    top: 400px;
-    left: 530px;
-    font-family: 'Raleway', serif;
-    font-size: 2rem;
-    border-style: double;
-    border-width: thick;
-    color:#FFFF7E;
-    opacity: .7;
-    text-align: center;
-}
-
 .ion-android-menu {
     color: #FFFF7E;
     font-size: 4rem;
     opacity: .7;
-    
-    font-family: 'Raleway', serif;
     margin: 20px;
-    
+    text-shadow: 1px 1px 0px #D3D3D3;
+
 }
 
 .dropdown {
     position: relative;
-    display: inline-block;
-
+    left: 20px;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
+    font-family: 'Raleway', serif;
     background-color: #FFFF7E;
     opacity: .7;
     min-width: 160px;
@@ -64,18 +23,15 @@ body {
     
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
-    padding: 12px 16px;
+    padding: 15px 16px;
     text-decoration: none;
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {background-color: #f1f1f1}
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display:block;
     z-index: 1;
