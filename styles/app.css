@@ -1,28 +1,36 @@
 body {
     background-color: #EBEBEB;
 }
+
 .track-transition {
-    display: inline;
-    margin:300px;
+    text-align:center;
+    position:relative;
 }
 
-.ion-android-close{
+.ion-android-close {
     color: black;
     font-size: 4rem;
     opacity: .7;
-    margin: 50px;
     text-shadow: 1px 1px 0px #D3D3D3;
+   
 }
 
-.ion-android-done{
+.ion-android-done {
     color: black;
     font-size: 4rem;
     opacity: .7;
-    margin: 50px;
     text-shadow: 1px 1px 0px #D3D3D3; 
+    
 }
 
-.cover-art{
+.cover-art {
     width: 30%;
     box-shadow: 0 0 5px #D3D3D3;
+
+}
+
+.track-details {
+    font-family: 'Raleway', serif;
+    text-align: center;
+    text-shadow: 1px 1px 0px #D3D3D3;
 }

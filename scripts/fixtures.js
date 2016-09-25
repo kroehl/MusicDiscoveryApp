@@ -1,4 +1,3 @@
-// Example Album
 var trackLibrary = {
     tracks: [
         {
