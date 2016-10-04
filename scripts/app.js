@@ -25,4 +25,4 @@ window.onload = function(){
 
 }
 
-window.warble = {};
+window.warble = window.warble || {};

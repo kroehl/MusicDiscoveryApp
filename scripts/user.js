@@ -1,14 +1,12 @@
 (function () {
-     var user;
-    
+    window.warble = window.warble || {};
     window.warble.user = {
         setUser: function (value) {
-            user = value;
+            localStorage.setItem("user", JSON.stringify(value));
         },
         getUser: function () {
-            return user;
+            var user = localStorage.getItem("user");
+            return user && JSON.parse(user) || null;
         }
     };
 }());
-
-window.warble.user.getUser();

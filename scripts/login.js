@@ -9,14 +9,13 @@ signInBtn.addEventListener('click', function() {
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-       c
+       
 
         var ref = new Firebase('https://warble-ef406.firebaseio.com'),
             usersRef = ref.child('users');
         
         
         window.warble.user.setUser(user);
-        debugger;
         
         usersRef.child(result.user.uid).set({
             email: result.user.email,
