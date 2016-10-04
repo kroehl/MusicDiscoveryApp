@@ -7,12 +7,25 @@ body {
     position:relative;
 }
 
+.save-alert {
+    display: none;
+    text-align: center;
+}
+
+.showa {
+    position: relative;
+    display:block;
+    float: inherit;
+    transition: opacity 4s ease-in-out;
+}
+
 .ion-android-close {
     color: black;
     font-size: 4rem;
     opacity: .7;
     text-shadow: 1px 1px 0px #D3D3D3;
-   
+    margin: 50px;
+    padding-top: 70px;
 }
 
 .ion-android-done {
@@ -20,13 +33,14 @@ body {
     font-size: 4rem;
     opacity: .7;
     text-shadow: 1px 1px 0px #D3D3D3; 
+    margin: 50px;
+
     
 }
 
 .cover-art {
     width: 30%;
-    box-shadow: 0 0 5px #D3D3D3;
-
+    box-shadow: 5px 5px 10px #D3D3D3;
 }
 
 .track-details {

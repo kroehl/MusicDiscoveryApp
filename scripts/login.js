@@ -2,19 +2,21 @@ var provider = new firebase.auth.GoogleAuthProvider();
 provider.addScope('https://www.googleapis.com/auth/plus.login');
 var signInBtn = document.getElementById('signinBtn');
 
+
 signInBtn.addEventListener('click', function() {       
     firebase.auth().signInWithPopup(provider).then(function(result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken;
         // The signed-in user info.
         var user = result.user;
-       
+       c
 
         var ref = new Firebase('https://warble-ef406.firebaseio.com'),
             usersRef = ref.child('users');
         
         
-     
+        window.warble.user.setUser(user);
+        debugger;
         
         usersRef.child(result.user.uid).set({
             email: result.user.email,
@@ -26,7 +28,7 @@ signInBtn.addEventListener('click', function() {
         
         // if you try something and there's an error do this
         // ...
-       
+       console.log(result);
     }).catch(function(error) {
         // Handle Errors here.
         var errorCode = error.code;
@@ -36,13 +38,16 @@ signInBtn.addEventListener('click', function() {
         // The firebase.auth.AuthCredential type that was used.
         var credential = error.credential;
         // ...
-    });
-    
- 
-  
-
+      
+    })
     
 });
+
+
+
+
+
+
 
 
 
