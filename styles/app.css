@@ -3,8 +3,7 @@ body {
 }
 
 .track-transition {
-    text-align:center;
-    position:relative;
+    text-align: center;
 }
 
 .save-alert {
@@ -25,8 +24,8 @@ body {
     opacity: .7;
     text-shadow: 1px 1px 0px #D3D3D3;
     margin: 50px;
-    padding-top: 70px;
 }
+
 
 .ion-android-done {
     color: black;
@@ -35,7 +34,6 @@ body {
     text-shadow: 1px 1px 0px #D3D3D3; 
     margin: 50px;
 
-    
 }
 
 .cover-art {

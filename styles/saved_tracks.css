@@ -47,7 +47,6 @@ body {
     transform:scale(1);
     transition:all 1s;
 }
-
 #savedTracks li:hover .album-img {
     transform:scale(1.05);
 }
