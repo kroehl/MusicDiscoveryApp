@@ -9,6 +9,14 @@ function saveAlert() {
     document.getElementById("savealert").classList.toggle("showa");
 }
 
+function nextTrack() {
+    currentImage++;
+    if (currentImage >=  newImg.length) {
+            currentImage = 0;
+        }
+        image.src = newImg[currentImage];
+}
+
 save.addEventListener('click', function (){
     
     var user = window.warble.user.getUser();
@@ -26,6 +34,8 @@ save.addEventListener('click', function (){
     });
 
     saveAlert();
+    nextTrack();
+    
 });
 
 
