@@ -4,6 +4,13 @@ var next = document.getElementById('next');
 var save = document.getElementById('save');
 var newImg = 0;
 
+var generateSongInfo = function (title, artist) {
+    var songInfoTemplate = 
+        '<h2 class="title">title</h2>'
+    +'   <h2 class="artist">artist</h2>'
+    ;
+    return songInfoTemplate;
+};
 
 window.onload = function(){
     var newImg = 
