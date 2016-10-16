@@ -1,7 +1,7 @@
 var trackLibrary = {
     tracks: [
-        {
-            title: 'Sunrise',
+        
+        {   title: 'Sunrise',
             artist: 'Machinimasound',
             albumArtUrl: 'assets/album_covers/18.png',
             audioUrl: 'assets/music/Sunrise'},
@@ -18,5 +18,6 @@ var trackLibrary = {
             audioUrl: 'assets/music/Dustsucker'}
         ]
 };
- 
+
+
  
