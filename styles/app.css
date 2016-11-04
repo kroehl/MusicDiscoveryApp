@@ -26,6 +26,15 @@ body {
     margin: 50px;
 }
 
+.ion-android-close:hover {
+    cursor: pointer;
+    color: white;
+}
+ 
+.ion-android-done:hover{
+    cursor: pointer;
+    color: white;
+}
 
 .ion-android-done {
     color: black;

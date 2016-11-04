@@ -24,8 +24,7 @@ var currentTrackIndex = null;
 var next = document.getElementById('next');
 
 
-//load initial image
-var setCurrentTrack = function (track) {
+var setTrackDetails = function (track) {
     var trackTitle = document.getElementsByClassName('title')[0];
     var trackArtist = document.getElementsByClassName('artist')[0];
     var trackImage = document.getElementsByClassName('track-image')[0];
@@ -36,20 +35,17 @@ var setCurrentTrack = function (track) {
 }
 
 
-
 window.onload = function(){
-    setCurrentTrack(trackLibrary.tracks[0]);
-    setSong(currentTrackIndex);
+    setTrackDetails(trackLibrary.tracks[0]);
+    setTrack(trackLibrary.tracks[0]);
     currentSoundFile.play();
 };
 
-var setSong = function () {
+var setTrack = function () {
     if (currentSoundFile) {
          currentSoundFile.stop();
      }
-    
-    var i = 0;
-    currentTrackIndex = trackLibrary.tracks[i];
+    currentTrackIndex = trackLibrary.indexOf(currentTrackIndex);
     
     currentSoundFile = new buzz.sound(currentTrackIndex.audioUrl,{
         formats: ['mp3'],
@@ -58,7 +54,14 @@ var setSong = function () {
 };
 
 var nextTrack = function (){
-    setSong(currentTrackIndex++);
+    
+    currentTrackIndex++;
+    
+     if (currentTrackIndex >= trackLibrary.tracks.length) {
+        currentTrackIndex = 0;
+    }
+    
+    setTrack(currentTrackIndex);
     currentSoundFile.play();
 }
 
